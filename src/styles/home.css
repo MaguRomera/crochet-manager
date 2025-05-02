@@ -1,0 +1,46 @@
+:root{
+    --wine: #422C37;
+    --ligthgrey: #D3D3D3;
+    --grey: #b4b4b4;
+    --darkwine: #31232A;
+
+}
+
+body{
+    background-color: var(--wine);
+}
+.father-cnt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.NavButton{
+    background-color: var(--ligthgrey);
+    color: var(--darkwine);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border: none;
+    width: 8rem;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    border-radius: 0.8rem;
+}
+.NavButton:hover{
+    background-color: var(--grey);
+}
+
+h1{
+    display: flex;
+    color: var(--ligthgrey);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-wrap: break-word;
+    hyphens: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
