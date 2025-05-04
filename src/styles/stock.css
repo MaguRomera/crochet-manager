@@ -1,3 +1,55 @@
 body{
-    background-color: #31232A;
+    background-color: var(--wine);
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: var(--ligthgrey);
+    margin-left: 0.5rem;
+   
+}
+.add-btn{
+    width: 2rem;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ligthgrey);
+    font-family: "Montserrat", sans-serif;
+    border-radius: 0.8rem; 
+    padding: 1rem; 
+}
+
+.tarjeta h3{
+    margin: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.props-hilado{
+    display: flex;
+    flex-direction: row;
+}
+.props-hilado p{
+    margin: 0%;
+    background-color: var(--wine);
+    padding: 0.4rem;
+    border-radius: 1rem;
+    color: var(--ligthgrey);
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+
 }

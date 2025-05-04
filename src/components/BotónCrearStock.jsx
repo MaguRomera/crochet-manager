@@ -1,10 +1,14 @@
 import { useNavigate } from "react-router-dom";
+import addicon from "../assets/plus-circle.svg"
 
 export function BotonAgregar() {
   const navigate = useNavigate();
   return (
-    <button onClick={() => navigate("/nuevo-hilado")}>
-      +
-    </button>
+      <img 
+        onClick={() => navigate("/nuevo-hilado")}
+        src={addicon} 
+        title="Agregar hilado"
+        className="add-btn" 
+      />
   );
 }

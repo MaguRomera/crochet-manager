@@ -1,0 +1,90 @@
+.prnp-cnt{
+    margin: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.prnp-cnt h2{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+/*estilo de los inputs*/
+
+.inputs-cnt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.textinput-cnt, .number-cnt, .select-cnt{
+    display: flex;
+    flex-direction: column;
+}
+.textinput-cnt label, .number-cnt label, .select-cnt label{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.textinput-cnt{
+    margin-left: 0.5rem;
+    width: 23rem;
+}
+.number-cnt, .select-cnt{
+    width: 11rem;
+    padding: 0.5rem;
+}
+
+.textinput-cnt input::placeholder{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.inputs-cnt input{
+    outline: none;  
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: var(--ligthgrey);
+}
+.select-cnt select{
+    outline: none;  
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: var(--ligthgrey);
+}
+
+/*estilo del botón de save*/
+
+.save-btn{
+    background-color: var(--ligthgrey);
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 0.4rem;
+    width: fit-content;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.save-btn:hover{
+    background-color: white;
+}
+
+
+

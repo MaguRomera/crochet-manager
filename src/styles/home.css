@@ -1,17 +1,14 @@
-:root{
-    --wine: #422C37;
-    --ligthgrey: #D3D3D3;
-    --grey: #b4b4b4;
-    --darkwine: #31232A;
-
-}
-
 body{
     background-color: var(--wine);
 }
 .father-cnt{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
