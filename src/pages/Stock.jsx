@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/stock.css"
 
+
 import { BotonAgregar } from "../components/BotónCrearStock";
+import { BotonBorrar } from "../components/DeleteStockButton";
 
 export function Stock() {
   const [hilados, setHilados] = useState([]);
@@ -20,13 +22,20 @@ export function Stock() {
         <BotonAgregar/>
       </header>
       <div className="tarjetas">
-        {hilados.map((h, index) => (
-          <div key={index} className="tarjeta" onClick={() => navigate(`/detalle/${index}`)}>
-            <h3>{h.material.toUpperCase()}</h3>
-            <span className="props-hilado">
-              <p>{h.color}</p>
-              <p>{h.cantidad}gr</p>
-            </span>
+        {hilados.map((hilado) => (
+          <div key={hilado.id} className="tarjeta" onClick={() => navigate(`/detalle/${hilado.id}`)}>
+            <section className="txt-section">
+              <h3>{hilado.material.toUpperCase()}</h3>
+              <span className="props-hilado">
+                <p>{hilado.color}</p>
+                <p>{hilado.cantidad}gr</p>
+              </span>
+            </section>
+            <section className="btn-section">
+              <BotonBorrar
+                setHilados={setHilados} id={hilado.id}
+              />
+            </section>
           </div>
         ))}
       </div>

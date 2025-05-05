@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/nuevohilado.css"
 import saveicon from "../assets/floppy-disk.svg"
-import Toastify from 'toastify-js'
+
 
 export default function NuevoHilado() {
   const [color, setColor] = useState("Rojo");
@@ -16,33 +16,18 @@ export default function NuevoHilado() {
     e.preventDefault();
   
     if (!material.trim()) {
-      Toastify({
-        text: "El material no puede estar vacío.",
-        duration: 2000,
-        close: true,
-      })
       return;
     }
   
     if (cantidad < 1 || cantidad > 10000) {
-      Toastify({
-        text: "La cantidad debe estar entre 1 y 10000 gramos.",
-        duration: 2000,
-        close: true,
-      })
       return;
     }
   
     if (precio < 1 || precio > 1000000) {
-      Toastify({
-        text: "El precio debe estar entre 1 y 1000000 ARS.",
-        duration: 2000,
-        close: true,
-      })
       return;
     }
   
-    const nuevo = { color, cantidad, material, grosor, precio };
+    const nuevo = { id: crypto.randomUUID(), color, cantidad, material, grosor, precio };
     const stock = JSON.parse(localStorage.getItem("stock")) || [];
     stock.push(nuevo);
     localStorage.setItem("stock", JSON.stringify(stock));

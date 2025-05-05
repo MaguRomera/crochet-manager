@@ -26,7 +26,7 @@ body{
 }
 .tarjeta{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--ligthgrey);
     font-family: "Montserrat", sans-serif;
     border-radius: 0.8rem; 
@@ -52,4 +52,24 @@ body{
     margin-right: 0.5rem;
     font-size: 0.8rem;
 
+}
+
+/*botones de editar y borrar*/
+.btn-section{
+    display: flex;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+.btn-tarjeta-icon{
+    width: 2rem;
+    padding: 0.2rem;
+}
+.btn-tarjeta{
+    display: flex;
+    align-items: center;
+    background-color: var(--ligthgrey);
+    border: none;
+    cursor: pointer;
+    padding: 0;  
 }
